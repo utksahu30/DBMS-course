@@ -1,0 +1,47 @@
+The main functions of a Database Management System (DBMS):
+
+1. Data Dictionary Management
+The DBMS manages a data dictionary, which is a special file that contains metadata—that is, data about your data. 
+This includes information like data types, field names, constraints on the data, and relationships between tables. 
+This dictionary is what the DBMS and users reference to understand the structure of the database.
+
+2. Data Storage Management 
+The DBMS handles all the physical aspects of storing data. 
+It translates the logical data structures used by applications into the physical file formats on disk. 
+This function also includes managing memory for caching and optimizing how data is retrieved from and written to storage devices.
+
+3. Data Transformation and Presentation 
+A key function of a DBMS is to transform the raw data into a format that is easily understood and used by applications and users. 
+For example, it can format dates, convert data types, or mask sensitive information, 
+ensuring the data is presented in a consistent and required manner.
+
+4. Security Management 
+The DBMS provides a robust security system to protect the database from unauthorized access. 
+This includes creating user accounts, assigning different levels of permissions (e.g., read-only, read-write), 
+and enforcing these access rules to ensure data privacy and protection.
+
+5. Concurrency Control
+In a multi-user environment, it's common for multiple users to try and access or modify the same data simultaneously. 
+The concurrency control function of the DBMS ensures that these concurrent transactions do not interfere with each other, 
+preventing data inconsistencies and maintaining the integrity of the database.
+
+6. Backup and Recovery Management 
+The DBMS is responsible for the safety and reliability of the data. 
+It provides tools for creating backups of the database and for recovering the database to a consistent state in case of a system failure, 
+such as a power outage or a software crash.
+
+7. Data Integrity Management 
+This function ensures that the data in the database is accurate and consistent. 
+The DBMS enforces integrity constraints, which are rules that the data must follow. 
+For example, a rule might prevent a user from entering a non-existent student ID into an enrollment table, 
+thereby maintaining the relationships between tables.
+
+8. Database Access Languages and APIs 
+A DBMS provides a language and an Application Programming Interface (API) to interact with the database. 
+The most common language is SQL (Structured Query Language), which allows users to perform tasks like 
+creating database structures, querying data, and updating records.
+
+9. Database Communication Interfaces 
+A DBMS can provide interfaces that allow it to communicate with other systems over a network. 
+This enables applications running on different machines to access and manipulate the database, 
+which is fundamental to client-server and web-based applications.

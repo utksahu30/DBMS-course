@@ -11,18 +11,6 @@ A DBMS is the software that acts as an intermediary between the user and the dat
 It provides the tools to create, maintain, and control access to the database. 
 Essentially, the DBMS is what makes the database useful.
 
-Key functions of a DBMS include:
-
-Data Definition: Defining the structure of the data and how it is organized.
-
-Data Manipulation: Inserting, updating, deleting, and retrieving data.
-
-Data Security: Controlling who can access and modify the data.
-
-Data Integrity: Ensuring the accuracy and consistency of the data.
-
-Backup and Recovery: Protecting the data from loss.
-
 Examples of popular DBMS software include MySQL, PostgreSQL, Microsoft SQL Server, and Oracle Database.
 
 

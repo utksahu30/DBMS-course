@@ -1,0 +1,7 @@
+Data is stored in flat files and can be accessed using any programming language. The file-based approach suffers following problems:
+
+Dependency of program on physical structure of data
+Complex process to fetch data
+Loss of data on simultaneous access
+Inability to give access based on record (Security)
+Data redundancy

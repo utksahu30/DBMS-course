@@ -1,0 +1,76 @@
+Data Integrity
+
+Data integrity is all about maintaining and assuring the accuracy, consistency, and reliability of data over its entire lifecycle. 
+Think of it as a guarantee that the data in your database is correct and trustworthy. 
+Without it, data becomes unreliable, leading to flawed analysis and poor decision-making.
+
+Importance: It's crucial for ensuring data quality, stability, and usability.
+
+Goal: To prevent accidental or intentional changes to data that could compromise its correctness.
+
+Implementation: Achieved primarily through the use of rules called constraints.
+
+
+Types of Data Integrity
+
+Data integrity is generally categorized into four main types:
+
+1. Entity Integrity
+This type ensures that every table has a primary key and that the column(s) chosen as the primary key are unique and not null.
+
+Purpose: To uniquely identify each record (row) in a table, ensuring no duplicate rows exist.
+
+Constraint Used: PRIMARY KEY.
+
+Example: In a Students table, the StudentID column would be the primary key. 
+Each student must have a unique ID, and this field cannot be left empty.
+
+2. Referential Integrity
+This ensures that relationships between tables remain consistent. 
+When one table has a foreign key that references the primary key of another table, 
+the value of that foreign key must either match an existing primary key value in the referenced table or be NULL.
+
+Purpose: To prevent "orphan" records—rows that reference non-existent records in another table.
+
+Constraint Used: FOREIGN KEY.
+
+Example: If a Grades table has a StudentID column that links to the Students table, 
+you cannot add a grade for a StudentID that doesn't exist in the Students table.
+
+3. Domain Integrity
+This ensures that all values in a column are of a specific, permissible type and format. 
+It enforces the validity of entries for a given column.
+
+Purpose: To restrict the type, format, and range of values that can be entered into a column.
+
+Constraints Used: CHECK, NOT NULL, DEFAULT, UNIQUE, and data type definitions (e.g., INT, VARCHAR, DATE).
+
+Example: A GradePercentage column could be restricted to only accept numeric values between 0 and 100. 
+An Email column must contain a value and follow a specific text format.
+
+4. User-Defined Integrity
+This involves rules and constraints that are specific to a particular business's needs and don't fall into the other categories.
+
+Purpose: To enforce business logic that is unique to the organization.
+
+Implementation: Often handled through triggers, stored procedures, or complex CHECK constraints.
+
+Example: A business rule might state that a customer cannot have more than five open orders at a time. 
+This logic would be implemented as a user-defined integrity rule.
+
+
+Common SQL Constraints
+
+Constraints are the rules that enforce data integrity at the column or table level.
+
+NOT NULL: Ensures that a column cannot have a NULL (empty) value.
+
+UNIQUE: Guarantees that all values in a column are different from one another.
+
+PRIMARY KEY: A combination of NOT NULL and UNIQUE. It uniquely identifies each record in a table.
+
+FOREIGN KEY: Uniquely identifies a record in another table, creating a link between the two.
+
+CHECK: Ensures that all values in a column satisfy a specific condition.
+
+DEFAULT: Sets a default value for a column when no value is specified.

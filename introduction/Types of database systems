@@ -1,0 +1,24 @@
+1. Hierarchical Database Model (1960s)
+This is one of the earliest database models. 
+It organizes data in a tree-like structure with a single root, and data is represented as a collection of records connected to one another through links. 
+Each record has a single parent, creating a one-to-many relationship. Think of it like a family tree or a file system on your computer. 
+
+2. Network Database Model (Late 1960s)
+An evolution of the hierarchical model, the network model also uses a tree-like structure but allows for more complex relationships. 
+In this model, a record (or "node") can have multiple parent nodes, creating a many-to-many relationship. 
+This allows for more flexible data connections, resembling a web or a network.
+
+3. Relational Database Model (1970s)
+This became the most popular and widely used model. 
+It organizes data into tables (or relations) consisting of rows and columns. 
+Each table represents an entity, and relationships between entities are established through common columns (foreign keys). 
+This structured approach, managed by a query language like SQL, makes it highly organized and reliable. 
+
+4. Object-Oriented Database Model (1980s-1990s)
+Developed to work with object-oriented programming languages, this model stores data in the form of objects. 
+An object can contain both data (attributes) and methods (procedures or code). 
+This model is useful for complex data types and is a better fit for applications that use object-oriented languages like Java or C++.
+
+5. NoSQL Database Models (Late 1990s - 2000s)
+As the internet grew, so did the need for databases that could handle massive amounts of unstructured and semi-structured data. 
+NoSQL (meaning "Not Only SQL") databases were developed to be more flexible and scalable than traditional relational databases. 

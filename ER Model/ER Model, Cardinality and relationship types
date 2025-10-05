@@ -1,0 +1,61 @@
+ER Model (Entity-Relationship Model)
+
+An Entity-Relationship (ER) Model is a graphical representation of a database's structure. 
+It's like a blueprint that shows how different pieces of information are related to each other. 
+This model is used in database design to visualize the entities, their attributes, 
+and the relationships between them before the actual database is created.
+
+Purpose: To design and visualize a database logically.
+
+Main Components:
+
+Entity: Any real-world object, person, place, or concept about which data is stored. 
+(e.g., Student, Course, Teacher). Represented by a rectangle.
+
+Attribute: A property or characteristic of an entity. 
+(e.g., StudentID, StudentName). Represented by an oval.
+
+Relationship: An association between two or more entities. 
+(e.g., A Student enrolls in a Course). Represented by a diamond.
+
+
+Cardinality
+
+Cardinality in an ER model defines the number of instances of one entity that can be associated 
+with the number of instances of another entity in a relationship. 
+In simple terms, it specifies "how many" entities are involved in a relationship. 
+It's a fundamental constraint that helps define the business rules.
+
+Representation: Cardinality is often expressed using notations like Crow's Foot notation 
+on the lines connecting entities.
+
+
+Relationship Types
+
+Relationships are classified based on their cardinality. The three main types are:
+
+1. One-to-One (1:1) Relationship
+In this relationship, one record in a table is associated with one and only one record in another table.
+
+Definition: An instance of Entity A can be related to at most one instance of Entity B, 
+and an instance of Entity B can be related to at most one instance of Entity A.
+
+Example: A Person can have only one Passport, and a Passport can belong to only one Person.
+
+2. One-to-Many (1:N) Relationship
+This is the most common relationship type. 
+One record in a table can be associated with one or more records in another table.
+
+Definition: An instance of Entity A can be related to many instances of Entity B, 
+but an instance of Entity B can be related to only one instance of Entity A.
+
+Example: One Customer can place many Orders, but each Order belongs to only one Customer.
+
+3. Many-to-Many (M:N) Relationship
+In this relationship, one or more records in a table can be associated with one or more records in another table.
+
+Definition: An instance of Entity A can be related to many instances of Entity B, 
+and an instance of Entity B can also be related to many instances of Entity A.
+
+Example: Many Students can enroll in many Courses. 
+A single student can take multiple courses, and a single course can have multiple students.
